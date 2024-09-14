@@ -94,9 +94,28 @@ app.get('/dashboard', (request, response) => {
 })
 
 
+// Logout route
+app.get('/logout', (request, response) => {
+    if(request.session.loggedin) {
+        // Commented works also fine
+        // request.session.loggedin = null;
+        // request.session.destroy()
+        // delete request.session.sess_name
+        // req.session.cookie.expires = new Date().getTime()
+        request.session.username = false 
+        response.redirect('/')
+    }
+})
 
-
-
+// Logout V2
+app.get('/logout2', (request, response) => {
+    request.session.destroy((err) => {
+        console.log("Session destroyed!")
+        response.redirect('/'); 
+        // or put it below.
+    })
+    // response.redirect('/');
+})
 
 
 app.listen(PORT, ()=> {
