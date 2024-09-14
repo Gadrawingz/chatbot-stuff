@@ -1,0 +1,26 @@
+{
+  "name": "mysql2-logon-site",
+  "version": "1.0.0",
+  "description": "Signon app using node.js, express and mysql and gain access if credentials are true",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "MySQL"
+  ],
+  "author": "Gad Iradufasha",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
