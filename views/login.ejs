@@ -9,20 +9,22 @@
 	</head>
 	<body>
 		<div class="login">
-			<h1>Signon Site</h1>
-			<form action="/authentication" method="POST">
+			<h1>Signon Site - Home</h1>
+			<form action="/verify" method="POST">
+				
 				<label for="username">
-					<i class="fas fa-user"></i>
+					<i class="fas fa-users"></i>
 				</label>
 				<input type="text" name="username" placeholder="Username" id="username" required>
+
 				<label for="password">
-					<i class="fas fa-lock"></i>
+					<i class="fas fa-key"></i>
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
 				<input type="submit" value="Click me to Login"><hr>
 			</form>
 			<div class="bottom-box">
-				<a href="#">Click here for registration</a>
+				<a href="/signup">Click here for registration</a>
 			</div>
 		</div>
 	</body>

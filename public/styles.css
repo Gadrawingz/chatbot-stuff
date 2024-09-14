@@ -63,6 +63,10 @@ body {
     transition: background-color 0.2s;
 }
 
+.signup-blue {
+    background-color: blue!important;
+}
+
 .login form input[type="submit"]:hover {
   background-color: #2868c7;
     transition: background-color 0.2s;
@@ -74,6 +78,7 @@ body {
 }
 
 .bottom-box a {
+    color: rgb(21, 21, 165);
     padding: 10px;
     text-decoration: none;
 }
