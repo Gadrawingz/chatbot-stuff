@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= data.title %></h1>
+        <p><%= data.definition %> </p>
+        <div class="box">
+            <p>My favorite sports are below:</p>
+            <ul>
+                <% data.sports.forEach(element => { %>
+                    <li><%= element %></li>
+                <% }); %> 
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>

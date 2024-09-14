@@ -117,6 +117,20 @@ app.get('/logout2', (request, response) => {
     // response.redirect('/');
 })
 
+// Route for Array page
+app.get('/arrays', (request, response)=> {
+    const data = {
+        title: "Arrays Page",
+        definition: "This page shows how to embed dynamic content to the page and normal JavaScript with ejs.",
+        sports : [
+            "Football",
+            "Parkour",
+            "Basketball"
+        ]
+    }
+    response.render('arrays', {data: data})
+});
+
 
 app.listen(PORT, ()=> {
     console.log(`Server runs on port ${PORT}`)
